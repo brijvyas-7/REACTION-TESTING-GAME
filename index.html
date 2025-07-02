@@ -6,13 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>REACTION TESTER</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
   <style>
     body {
-      background: url('—Pngtree—black game background material free_1131284.jpg') no-repeat center center fixed;
+      background: url('https://images.unsplash.com/photo-1556740749-887f6717d7e4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80') no-repeat center center fixed;
       background-size: cover;
-      color: #fff;
       font-family: 'Segoe UI', sans-serif;
+      margin: 0;
       height: 100vh;
       display: flex;
       align-items: center;
@@ -20,45 +19,62 @@
     }
 
     .game-container {
-      background: rgba(255, 255, 255, 0.05);
+      background: rgba(0, 0, 0, 0.6);
       backdrop-filter: blur(10px);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      padding: 30px;
-      border-radius: 20px;
-      box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
-      text-align: center;
+      border-radius: 15px;
+      padding: 30px 20px;
+      box-shadow: 0 0 25px rgba(0, 255, 255, 0.2);
       max-width: 500px;
       width: 90%;
+      text-align: center;
+      border: 1px solid rgba(255, 255, 255, 0.1);
     }
 
     h1 {
-      color: #f1c40f;
-      font-weight: bold;
-      margin-bottom: 10px;
+      font-size: 28px;
+      color: #00ffe7;
+      text-shadow: 0 0 5px #00ffe7, 0 0 10px #00ffe7;
     }
 
     h4 {
-      color: #ddd;
-      font-size: 18px;
+      font-size: 16px;
+      color: #eee;
+      margin-top: 10px;
       margin-bottom: 20px;
     }
 
     p {
-      background-color: #ff7675;
-      padding: 8px;
+      background-color: #1e272e;
+      padding: 10px;
       border-radius: 8px;
       font-weight: bold;
+      color: #00d2ff;
       font-size: 18px;
-      color: #fff;
-      margin-bottom: 20px;
     }
 
     #shape {
       position: relative;
       display: none;
-      background-color: red;
-      border: 2px solid gold;
-      margin: 0 auto;
+      background-color: #ff4757;
+      border: 3px solid #ffa502;
+      margin: 30px auto 0;
+      box-shadow: 0 0 20px rgba(255, 71, 87, 0.7);
+      transition: all 0.3s ease-in-out;
+    }
+
+    @media (max-width: 576px) {
+      h1 {
+        font-size: 22px;
+      }
+
+      #shape {
+        width: 100px !important;
+        height: 100px !important;
+      }
+
+      .game-container {
+        padding: 20px;
+      }
     }
   </style>
 </head>

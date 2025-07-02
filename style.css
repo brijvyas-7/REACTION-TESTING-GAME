@@ -1,11 +1,9 @@
 #shape {
   width: 150px;
   height: 150px;
-  background-color: red;
-  border: 2px solid gold;
-  display: none;
-  transition: 0.2s ease;
+  border-radius: 50%;
 }
+
 
 /* Mobile adjustments */
 @media (max-width: 576px) {

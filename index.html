@@ -136,6 +136,27 @@
       document.getElementById("timetaken").innerHTML = timeTaken.toFixed(2) + "s";
       appearAfterDelay();
     };
+    function makeshapeappeear() {
+  const shape = document.getElementById("shape");
+  const shapeSize = (Math.random() * 150) + 50; // shape size between 50 and 200px
+
+  const maxTop = window.innerHeight - shapeSize - 100;  // subtracting extra to keep inside view
+  const maxLeft = window.innerWidth - shapeSize - 20;
+
+  const top = Math.random() * maxTop;
+  const left = Math.random() * maxLeft;
+
+  shape.style.width = shapeSize + "px";
+  shape.style.height = shapeSize + "px";
+  shape.style.top = top + "px";
+  shape.style.left = left + "px";
+  shape.style.borderRadius = Math.random() > 0.5 ? "50%" : "0";
+  shape.style.backgroundColor = getRandomColor();
+  shape.style.display = "block";
+
+  start = new Date().getTime();
+}
+
   </script>
 </body>
 </html>
